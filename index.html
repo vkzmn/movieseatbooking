@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <h1 class="heading">Choose your seats</h1>
+    <ul class="legend">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat booked"></div>
+        <small>Booked</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat" data-seat="A1"></div>
+        <div class="seat unavailable" data-seat="A2"></div>
+        <div class="seat" data-seat="A3"></div>
+        <div class="seat booked" data-seat="A4"></div>
+        <div class="seat booked" data-seat="A5"></div>
+        <div class="seat" data-seat="A6"></div>
+        <div class="seat unavailable" data-seat="A7"></div>
+        <div class="seat" data-seat="A8"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat" data-seat="B1"></div>
+        <div class="seat" data-seat="B2"></div>
+        <div class="seat" data-seat="B3"></div>
+        <div class="seat" data-seat="B4"></div>
+        <div class="seat" data-seat="B5"></div>
+        <div class="seat" data-seat="B6"></div>
+        <div class="seat" data-seat="B7"></div>
+        <div class="seat" data-seat="B8"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat="C1"></div>
+        <div class="seat booked" data-seat="C2"></div>
+        <div class="seat" data-seat="C3"></div>
+        <div class="seat" data-seat="C4"></div>
+        <div class="seat" data-seat="C5"></div>
+        <div class="seat booked" data-seat="C6"></div>
+        <div class="seat" data-seat="C7"></div>
+        <div class="seat" data-seat="C8"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat="D1"></div>
+        <div class="seat" data-seat="D2"></div>
+        <div class="seat" data-seat="D3"></div>
+        <div class="seat" data-seat="D4"></div>
+        <div class="seat" data-seat="D5"></div>
+        <div class="seat" data-seat="D6"></div>
+        <div class="seat booked" data-seat="D7"></div>
+        <div class="seat" data-seat="D8"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat="E1"></div>
+        <div class="seat" data-seat="E2"></div>
+        <div class="seat" data-seat="E3"></div>
+        <div class="seat booked" data-seat="E4"></div>
+        <div class="seat booked" data-seat="E5"></div>
+        <div class="seat" data-seat="E6"></div>
+        <div class="seat" data-seat="E7"></div>
+        <div class="seat" data-seat="E8"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat="F1"></div>
+        <div class="seat" data-seat="F2"></div>
+        <div class="seat" data-seat="F3"></div>
+        <div class="seat" data-seat="F4"></div>
+        <div class="seat booked" data-seat="F5"></div>
+        <div class="seat booked" data-seat="F6"></div>
+        <div class="seat" data-seat="F7"></div>
+        <div class="seat" data-seat="F8"></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-seat="G1"></div>
+        <div class="seat" data-seat="G2"></div>
+        <div class="seat booked" data-seat="G3"></div>
+        <div class="seat booked" data-seat="G4"></div>
+        <div class="seat" data-seat="G5"></div>
+        <div class="seat" data-seat="G6"></div>
+        <div class="seat booked" data-seat="G7"></div>
+        <div class="seat" data-seat="G8"></div>
+      </div>
+    </div>
+
+    <div class="total">
+      <p class="text">Selected Seat(s): <span id="seats-selected"></span></p>
+      <p class="text">
+        Total tickets: <span id="count">0</span>
+        <br />
+        Total price: $
+        <span id="total">0</span>
+      </p>
+    </div>
+
+    <div class="button disabled">Book Now</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
