@@ -19,5 +19,3 @@ Super simple movie seat selector
 - Vanilla JS
 - All data (seat layout, booked seats, ticket price) is hardocoded
 - On submit nothing happens
-
----
