@@ -130,12 +130,12 @@ p.text span {
   transition: all 0.25s ease;
 }
 
-.button:hover {
-  transform: scale(1.05);
-}
-
 .button.disabled {
   cursor: default;
   background-color: #ffffff1c;
   opacity: 0.3;
+}
+
+.button:not(.disabled):hover {
+  transform: scale(1.05);
 }
