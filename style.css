@@ -127,7 +127,7 @@ p.text span {
   padding: 12px 30px;
   background-color: rgba(0, 157, 255, 0.904);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .button:hover {
