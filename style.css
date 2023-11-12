@@ -69,9 +69,7 @@ body {
 }
 
 .legend {
-  /* background: rgba(0, 0, 0, 0.121);  */
   padding: 8px 10px;
-  border-radius: 8px;
   color: #6d7793;
   list-style-type: none;
   display: flex;
@@ -84,6 +82,7 @@ body {
   justify-content: center;
   margin: 0 10px;
 }
+
 .legend li small {
   margin-left: 5px;
 }
@@ -138,4 +137,47 @@ p.text span {
 
 .button:not(.disabled):hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 450px) {
+  body {
+    height: auto;
+  }
+
+  .heading {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .screen {
+    width: 80%;
+    height: 130px;
+    margin: 0px auto 15px auto;
+  }
+
+  .container {
+    margin-bottom: 15px;
+  }
+
+  .seat {
+    background-color: #ffffff1c;
+    height: 20px;
+    width: 23px;
+    margin: 4px;
+  }
+
+  .legend {
+    padding: 0;
+  }
+
+  .legend li {
+    margin: 0 5px;
+  }
+
+  .button {
+    margin: 25px auto;
+    width: 80%;
+    text-align: center;
+    padding: 15px 0px;
+  }
 }
